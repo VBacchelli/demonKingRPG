@@ -45,7 +45,8 @@ public partial class Player : Area2D
 		}else if (velocity.Y < 0){
 			animatedSprite2D.Animation = "walk-up";
 		}
-	}
+		
+	} 
 	
 	private void OnBodyEntered(Node2D body){
 		EmitSignal(SignalName.Hit);

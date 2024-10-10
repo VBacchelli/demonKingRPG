@@ -4,21 +4,21 @@
 [ext_resource type="Texture2D" uid="uid://ywbj3divwmcw" path="res://AnimationSheet_Character.png" id="2_u1e6f"]
 [ext_resource type="Texture2D" uid="uid://8q28wcss6krv" path="res://CharacterWalk.png" id="3_wkygw"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mukp5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5napj"]
 atlas = ExtResource("2_u1e6f")
-region = Rect2(0, 64, 32, 32)
+region = Rect2(0, 65, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rfuiq"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_llnwc"]
 atlas = ExtResource("2_u1e6f")
-region = Rect2(32, 64, 32, 32)
+region = Rect2(32, 65, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_qh8n3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjdot"]
 atlas = ExtResource("2_u1e6f")
-region = Rect2(64, 64, 32, 32)
+region = Rect2(64, 65, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_115mc"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6q1q"]
 atlas = ExtResource("2_u1e6f")
-region = Rect2(96, 64, 32, 32)
+region = Rect2(96, 65, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ekcns"]
 atlas = ExtResource("3_wkygw")
@@ -40,16 +40,16 @@ region = Rect2(93, 0, 31, 34)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mukp5")
+"texture": SubResource("AtlasTexture_5napj")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_rfuiq")
+"texture": SubResource("AtlasTexture_llnwc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_qh8n3")
+"texture": SubResource("AtlasTexture_mjdot")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_115mc")
+"texture": SubResource("AtlasTexture_m6q1q")
 }],
 "loop": true,
 "name": &"walk",
@@ -80,7 +80,7 @@ script = ExtResource("1_025bm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ks1dh")
-animation = &"walk-up"
+animation = &"walk"
 speed_scale = 0.9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

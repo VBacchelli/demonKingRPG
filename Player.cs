@@ -38,7 +38,7 @@ public partial class Player : Area2D
 			y: Mathf.Clamp(Position.Y, 0, ScreenSize.Y)
 		);
 		
-		if (velocity.X != 0||velocity.Y>0){
+		if (velocity.X != 0||velocity.Y>=0){
 			animatedSprite2D.Animation = "walk";
 			animatedSprite2D.FlipV = false;
 			animatedSprite2D.FlipH = velocity.X < 0; //dai in automatico a flipH true o false in base al risultato del <
